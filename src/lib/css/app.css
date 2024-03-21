@@ -1,0 +1,56 @@
+body {
+  font-family: 'Montserrat Variable', var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--font-size-base--line-height);
+}
+
+[class|='layout'] {
+  display: grid;
+  grid-template-columns: [span-start] var(--spacing-4) minmax(0, 1fr) [content-start] min(100ch, 100% - 2 * var(--spacing-4)) [content-end]  minmax(0, 1fr) var(--spacing-4) [span-end];
+}
+
+.layout-span > * {
+  grid-column: span;
+}
+
+.layout-content > * {
+  grid-column: content;
+}
+
+.flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[class|='btn'], a[role='button'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: var(--radius-3xl);
+  font-weight: 600;
+  letter-spacing: 0.1px;
+
+  padding-block: var(--spacing-1);
+  padding-inline: var(--spacing-5);
+
+  background-color: var(--color-brand-yellow);
+  color: var(--color-black);
+}
+
+.btn-sm {
+  font-size: var(--font-size-sm);
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.global {
+  text-align: center;
+
+  & > * ~ * {
+    margin-top: var(--spacing-6);
+  }
+}

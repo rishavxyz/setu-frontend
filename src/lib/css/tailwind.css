@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-yellow: hsla(45, 100%, 55%, 1);
+  --color-brand-blue: hsla(226, 75%, 14%, 1);
+  --color-brand-grey: hsla(228, 12%, 92%, 1);
+}

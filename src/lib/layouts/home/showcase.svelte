@@ -1,0 +1,64 @@
+<script>
+	const showcase = [
+		{
+			heading: 'Setu AI Academy',
+			problem: 'Is your current skilling method outcome oriented ? What is the ROI of LnD?',
+			solution: 'Upskill your talent with purpose. Measure the impact of your training investment.',
+			results: [
+				'Strengthen your talent in 1/3rd time',
+				'Upskill internal talents and sharpen your competitive edge',
+				'NeoSkill senior management to drive innovation and AI driven strategic initiatives'
+			]
+		},
+		{
+			heading: 'Setu RecruitEase',
+			problem: 'Swamped with resumes but struggling to find the right talent for your company?',
+			solution: 'Cut through the resume clutter. Find top talent, faster.',
+			results: [
+				'80 % hiring time and efforts saved',
+				'60 % hiring cost savings',
+				'4X productivity gain',
+				'10X ROI'
+			]
+		},
+		{
+			heading: 'Setu SkillScan',
+			problem: 'Are you able to measure the natural strength of your data talent? What about attitude?',
+			solution: 'Build high-performance data teams with confidence.',
+			results: [
+				'Assess 8 Technical Skills',
+				'Evaluate 5 attitudinal attributes'
+			]
+		},
+	];
+</script>
+
+<section class="layout-content" id="showcase">
+	<ul class="flex flex-col lg:flex-row lg:justify-between gap-10">
+		{#each showcase as { heading, problem, solution, results }}
+			<li class="flex flex-col lg:max-w-xs rounded-xl overflow-hidden border border-black/20">
+				<p class="bg-brand-blue text-white font-semibold py-6 px-4 text-xl">{heading}</p>
+				<div class="space-y-4 p-4">
+					<p class="problem">{problem}</p>
+					<p class="solution font-medium">{solution}</p>
+					<ul class="space-y-4 text-sm">
+						{#each results as result}
+							<li class="flex items-center gap-2">
+								<div class="flex-shrink-0 w-4 h-4">
+									<svg class="w-4 h-4" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.363276 13.921C0.466811 13.8489 0.443198 13.7266 0.468628 13.6285C0.85855 12.1336 1.78855 11.1225 3.26226 10.6968C4.73355 10.2718 6.08193 10.6018 7.18751 11.6807C8.72359 13.1799 10.2282 14.7111 11.7461 16.2284C12.2553 16.7376 12.3752 16.7388 12.8747 16.2393C16.4597 12.6537 20.0471 9.06994 23.629 5.48133C24.243 4.86678 24.9507 4.43266 25.8069 4.25707C25.8929 4.23951 25.9819 4.23588 26.0697 4.22559C26.4947 4.39209 26.9415 4.49018 27.3393 4.73842C28.5412 5.48859 29.2193 6.56451 29.3125 7.96859C29.3931 9.17711 28.9583 10.2288 28.1052 11.0831C23.4056 15.7931 18.6981 20.4945 13.9942 25.2002C13.4269 25.7676 12.773 26.1823 11.9913 26.3833C11.9253 26.4003 11.8526 26.3972 11.8145 26.4693C10.8972 26.3427 10.1101 25.9552 9.45499 25.2989C6.82544 22.6682 4.19529 20.0374 1.56392 17.4078C1.00689 16.8514 0.635737 16.1951 0.45894 15.4261C0.438354 15.3378 0.463784 15.2239 0.362671 15.1616C0.363276 14.7486 0.363276 14.3345 0.363276 13.921Z" fill="#66BA6A"/>
+										<path d="M11.8157 26.4693C11.8539 26.3973 11.9265 26.4003 11.9925 26.3834C12.7742 26.1823 13.4281 25.7676 13.9954 25.2003C18.6987 20.4946 23.4068 15.7931 28.1065 11.0832C28.959 10.2288 29.3943 9.17776 29.3138 7.96864C29.2199 6.56455 28.5424 5.48864 27.3405 4.73846C26.9427 4.49022 26.4959 4.39213 26.0709 4.22563C26.7999 4.07547 27.4998 4.20444 28.1694 4.48719C30.7887 5.59459 31.4825 8.9943 29.476 11.0111C24.7043 15.8064 19.9163 20.5848 15.1276 25.3625C14.2394 26.2483 13.132 26.5777 11.8944 26.5051C11.8666 26.5032 11.8411 26.4814 11.8157 26.4693Z" fill="#4DAF51"/>
+									</svg>
+								</div>
+								<p class="flex-shrink">{result}</p>
+							</li>
+						{/each}
+					</ul>
+				</div>
+				<div class="mt-auto p-4 pt-0">
+					<a href="#_" role="button" class="w-fit mx-auto">Talk to us</a>
+				</div>
+			</li>
+		{/each}
+	</ul>
+</section>
